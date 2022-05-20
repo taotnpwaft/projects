@@ -1,0 +1,15 @@
+{
+    "verbose": true,
+    "ignore": [
+      ".git",
+      "node_modules"
+    ],
+    "events": {
+      "start": "clear"
+    },
+    "watch": [
+      "**/*"
+    ],
+    "delay": "2500",
+    "ignoreRoot": [".git", "node_modules"]
+}

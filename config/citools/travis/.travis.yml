@@ -1,0 +1,85 @@
+jobs:
+  include:
+    - stage: test
+    - php: 8
+
+import:
+
+install:
+git:
+  depth:
+  quiet: true
+  submodules:
+  clone: true
+env:
+arch: amd64
+apt_packages:
+  - ""
+os: osx, windows, linux;
+sudo: required
+dist: "focal"
+notifications:
+project:
+
+before_install:
+- echo -e "machine github.com\n  login $GITHUB_TOKEN" > ~/.netrc
+- git lfs pull
+
+api_key:
+
+after_deploy:
+-
+
+deploy:
+  provider: pages git
+  deploy_key: <deploy_key>
+
+deploy1:
+  provider: script
+  api_key: "GITHUB OAUTH TOKEN"
+  file: "FILE TO UPLOAD"
+  skip_cleanup: true
+  on:
+    tags: true
+d:
+  - ""
+branches:
+  only:
+    - master
+    - test
+    - main
+
+language: php
+php:
+- 7.4
+- 8.0
+- 8.1
+jobs1:
+  include:
+  - php: 7.4
+    env: KEY=VALUE
+  allow_failures:
+  - php: 7.4
+    env: KEY=VALUE
+addons: ".travis.yml",
+env:
+  - DB=mysql
+
+language:
+          test
+          sh
+          shell
+          php
+          objective_c
+          objective-c
+          obj_c
+          obj-c
+          minimal
+          javascript
+          generic
+          cpp
+          csharp
+          bash
+          nodejs, node, node.js, node_js
+cache:
+ packages: "npm"
