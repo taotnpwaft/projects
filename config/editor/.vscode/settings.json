@@ -1,3 +1,154 @@
+// Place your settings in this file to overwrite default and user settings.
 {
-    "livePreview.defaultPreviewPath": "/website/newpassword.html"
+    "editor.fontSize": "19.2",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.unicodeHighlight.allowedCharacters": {
+        "’": true
+    },
+    "editor.suggestSelection": "first",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.insertSpaces": false,
+	"editor.tabSize": 4,
+    "editor.formatOnPaste": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "aeschli.vscode-css-formatter"
+    },
+    "[vb]": {},
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "[sql]": {
+        "editor.defaultFormatter": "cweijan.vscode-mysql-client2"
+    },
+    "[csharp]": {
+        "editor.defaultFormatter": ""
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "editor.formatOnSave": "true"
+    },
+    "[python]": {
+        "python.linting.pylintEnabled": "true",
+        "python.linting.enabled": true,
+        "python.defaultInterpreterPath": "/bin/python3",
+        "python.languageServer": "Pylance"
+    },
+    "git.autofetch": "true",
+    "git.suggestSmartCommit": false,
+    "git.confirmSync": false,
+    "git.allowForcePush": true,
+    "git.terminalAuthentication": false,
+    "workbench.colorTheme": "GitHub Dark Default",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook",
+        "*.bin": "default",
+        "*.html": "default",
+        "*.odt": "default",
+        "*.docx": "default"
+    },
+    "eslint.enable": true,
+    "eslint.options": {
+        "rules": {
+            "quotes": [2, "double"]
+        },
+        "rulePaths": "<path>",
+        "configFile": ".vscode/.eslintrc.js",
+        "overrideConfigFile": ".vscode/.eslintrc.js"
+    },
+    "eslint.format.enable": true,
+    "eslint.validate": ["javascript", "javascriptreact", "html", "json", "jsonc"],
+    "eslint.useESLintClass": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.codeAction.disableRuleComment": {
+        "enable": true,
+        "location": "separateLine"
+      },
+      "eslint.codeAction.showDocumentation": {
+        "enable": true
+    },
+    "eslint.lintTask.enable": true,
+    "eslint.run": "onType",
+    "prettier.eslintIntegration": true,
+    "prettier.configPath": ".prettierrc",
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true,
+    "prettier.printWidth": 100,
+    "prettier.semi": false,
+    "prettier.trailingComma": "all",
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "githubPullRequests.queries": [
+        {
+            "label": "Waiting For My Review",
+            "query": "is:open review-requested:${user}"
+        },
+        {
+            "label": "Assigned To Me",
+            "query": "is:open assignee:${user}"
+        },
+        {
+            "label": "Created By Me",
+            "query": "is:open author:${user}"
+        }
+    ],
+    "githubIssues.queries": [
+        {
+            "label": "My Issues",
+            "query": "default"
+        },
+        {
+            "label": "Created Issues",
+            "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+        }
+    ],
+    "githubPullRequests.remotes": [
+        "origin",
+        "upstream",
+        "master",
+        "main"
+    ],
+    "cSpell.userWords": [],
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "cmake.configureOnOpen": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "mssql.connections": [
+        {
+        "server": "{{put-server-name-here}}",
+        "database": "{{put-database-name-here}}",
+        "user": "{{put-username-here}}",
+        "password": ""
+        },
+    ],
+    "diffEditor.maxComputationTime": 0,
+    "redhat.telemetry.enabled": true,
+    "debug.onTaskErrors": "debugAnyway",
+    "codeQL.telemetry.enableTelemetry": false,
 }
